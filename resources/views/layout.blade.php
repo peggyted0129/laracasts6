@@ -23,6 +23,9 @@
             <a class="nav-link active" aria-current="page" href="{{ url('articles') }}">articles [31]-[33]</a>
           </li>
           <li class="nav-item me-3">
+            <a class="nav-link" aria-current="page" href="{{ url('conversations') }}">授權 [50]-[54]</a>
+          </li>
+          <li class="nav-item me-3">
             <a class="nav-link" aria-current="page" href="{{ url('login') }}">登入註冊 [34]-[35]</a>
           </li>
           <li class="nav-item dropdown me-3">

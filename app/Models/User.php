@@ -24,6 +24,12 @@ class User extends Authenticatable
         // select * from articles where user_id = 1
         return $this->hasMany(Article::class);
     }
+
+    public function conversations()
+    {
+        // select * from conversations where user_id = 1
+        return $this->hasMany(Conversation::class);
+    }
     
     /**
      * The attributes that should be hidden for serialization.

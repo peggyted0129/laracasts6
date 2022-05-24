@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ArticlesController;
+use App\Http\Controllers\ConversationsController;
+use App\Http\Controllers\ConversationBestReplyController;
 use Illuminate\Support\Facades\Auth;
 
 /*
@@ -14,6 +16,10 @@ use Illuminate\Support\Facades\Auth;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('conversations', [ConversationsController::class, 'index']);
+Route::get('conversations/{conversation}', [ConversationsController::class, 'show']);
+Route::post('best-replies/{reply}', [ConversationBestReplyController::class, 'store']);
 
 Auth::routes();
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
